@@ -1,0 +1,31 @@
+{
+  "name": "AmazonTest",
+  "version": "0.0.1",
+  "description": "POC for using Puppeteer with Cucumber.js on Amazon's front-end",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js .",
+    "test": "npm run test:e2e || npm run report",
+    "pretest": "npm run lint && rm -rf ./report && mkdir report",
+    "posttest": "",
+    "test:e2e": "cucumber-js features/**/*.feature -f json:report/cucumber_report.json",
+    "test:e2e:debug": "DEBUG=true npm run test:e2e",
+    "report": "node index.js"
+  },
+  "keywords": [
+    "BDD",
+    "testing",
+    "e2e",
+    "acceptance"
+  ],
+  "author": "Kasper Amstrup Andersen",
+  "license": "Beerware",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1",
+    "cucumber-html-reporter": "^4.0.3",
+    "eslint": "^5.1.0",
+    "eslint-config-google": "^0.9.1",
+    "puppeteer": "^1.5.0"
+  }
+}
