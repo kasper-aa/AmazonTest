@@ -4,7 +4,6 @@ const {assert} = require('chai');
 const PAGE = 'https://www.amazon.co.uk';
 const INSTOCK_SIMPLE_ASIN = '1680502387';
 
-
 Given('A user is on amazon.co.uk', async function() {
     let response = await this.page.goto(PAGE);
     assert(response.ok(),
