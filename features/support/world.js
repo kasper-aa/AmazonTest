@@ -7,7 +7,7 @@ class World {
     this.parameters = parameters;
   }
 
-  async open() {
+  async launchBrowser() {
     const launchOptions = {};
 
     if (process.env.DEBUG) {

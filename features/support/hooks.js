@@ -1,11 +1,11 @@
 const {After, Before, Status} = require('cucumber');
 
-Before(async function(testCase) {
-  await this.open();
+Before(async function() {
+  await this.launchBrowser();
 });
 
-After(async function(testcase) {
-  if (testcase.result.status === Status.FAILED) {
+After(async function(testCase) {
+  if (testCase.result.status === Status.FAILED) {
     await this.takeScreenshot();
   }
   await this.browser.close();
