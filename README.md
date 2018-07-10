@@ -1,10 +1,11 @@
 # AmazonTest
 
-This project is a small POC for using Puppeteer with Cucumber.js on Amazon's front-end.
+This project is a small POC for using [Puppeteer](https://developers.google.com/web/tools/puppeteer/)
+with [Cucumber.js](https://github.com/cucumber/cucumber-js) on Amazon's front-end.
 
 ## Build & Run
 
-Install node.js version 9.
+Install [Node.js version 8](https://nodejs.org/en/download/).
 
 ``` bash
 # install dependencies
