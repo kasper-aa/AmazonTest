@@ -1,6 +1,6 @@
 # AmazonTest
 
-This project is a small POC for adding a product to the cart on on Amazon's front-end.
+This project is a small *proof of concept* for adding a product to the cart on Amazon's front-end.
 It's using [Puppeteer](https://developers.google.com/web/tools/puppeteer/) with
 [Cucumber.js](https://github.com/cucumber/cucumber-js).
 
