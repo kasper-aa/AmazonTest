@@ -1,7 +1,8 @@
 # AmazonTest
 
-This project is a small POC for using [Puppeteer](https://developers.google.com/web/tools/puppeteer/)
-with [Cucumber.js](https://github.com/cucumber/cucumber-js) on Amazon's front-end.
+This project is a small POC for adding a product to the cart on on Amazon's front-end.
+It's using [Puppeteer](https://developers.google.com/web/tools/puppeteer/) with
+[Cucumber.js](https://github.com/cucumber/cucumber-js).
 
 ## Build & Run
 
@@ -25,7 +26,8 @@ For additional script options, see package.json.
 
 ## Limitations & Assumptions
 
-In a "real" project, there would be a lot requirements and needs to uncover before deciding on a test rig. Here, I've brutally made assumptions, mostly founded in [yagni](https://martinfowler.com/bliki/Yagni.html).
+In a "real" project, there would be a lot requirements and needs to uncover before deciding on a test rig.
+Here, I've made assumptions, mostly based on [yagni](https://martinfowler.com/bliki/Yagni.html).
 
 Covers a single sunshine path only. No handling of:
 - Optional "add-to-order" overlay,
