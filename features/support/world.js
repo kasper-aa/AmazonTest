@@ -1,5 +1,5 @@
 const {setWorldConstructor, setDefaultTimeout} = require('cucumber');
-const PuppeteerWorld = require('./PuppeteerWorld.js');
+const PuppeteerWorld = require('./puppeteerworld.js');
 
 if (process.env.DEBUG) {
   setDefaultTimeout(5 * 60 * 1000);

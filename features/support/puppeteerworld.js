@@ -22,6 +22,10 @@ module.exports = class PuppeteerWorld {
     await this.page.setViewport({width: 1024, height: 768});
   }
 
+  async closeBrowser() {
+    this.browser.close();
+  }
+
   async takeScreenshot() {
     let world = this;
     await this.page.screenshot().then(function(buffer) {
