@@ -23,6 +23,7 @@ module.exports = class PuppeteerWorld {
   }
 
   async closeBrowser() {
+    debugger;
     this.browser.close();
   }
 
